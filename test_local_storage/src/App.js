@@ -1,21 +1,3 @@
-// import { Route, Routes } from "react-router-dom";
-// import "./App.css";
-// import About from "./pages/About";
-// import Home from "./pages/Home";
-// import SaveInfo from "./pages/SaveInfo.jsx";
-
-// function App() {
-//   return (
-//     <Routes>
-//       <Route path="/" element={<Home />} />
-//       <Route path="/about" element={<About />} />
-//       <Route path="/saveinfo" element={<SaveInfo />} />
-//     </Routes>
-//   );
-// }
-
-// export default App;
-
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
