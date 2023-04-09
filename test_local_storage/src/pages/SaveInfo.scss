@@ -1,0 +1,16 @@
+ul {
+  list-style: none;
+}
+
+li {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #eee;
+  word-break: break-all;
+  overflow: hidden;
+  overflow-y: auto;
+
+  & + li {
+    margin-top: 30px;
+  }
+}

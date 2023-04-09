@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SaveInfo.scss";
 
 const SaveInfo = () => {
   // 로컬 스토리지에서 저장된 모든 값을 가져와 배열로 저장
