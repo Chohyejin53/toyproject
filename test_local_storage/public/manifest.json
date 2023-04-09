@@ -1,0 +1,19 @@
+{
+  "short_name": "React App",
+  "name": "BoogleBoogle",
+  "description": "마음 속 분노를 쏟아내는 나만의 대나무숲",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "128": "icons/128.png"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
