@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import BarType from "./pages/BarType";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import SaveInfo from "./pages/SaveInfo.jsx";
@@ -23,6 +24,10 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route
+          path="/bartype"
+          element={<BarType savedInputs={savedInputs} />}
+        />
         <Route
           path="/about"
           element={<About onSave={handleSave} savedInputs={savedInputs} />}

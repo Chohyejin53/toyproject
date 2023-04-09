@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <h1>감정 저장소</h1>
       <span>
-        <Link to="/About"> 입장하기</Link>
+        <Link to="/BarType"> 입장하기</Link>
       </span>
     </div>
   );
