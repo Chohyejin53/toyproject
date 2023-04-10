@@ -10,13 +10,13 @@ def get_user_projects(request, user_id):
     return Response(data)
 
 @api_view(['POST'])
-def create_project01(request):
+def create_project(request):
     text = request.data.get('text')
     user_id = request.data.get('user_id')
     project01 = Project01.objects.create(text=text, user_id=user_id)
     return Response({'id': project01.id})
 
 @api_view(['DELETE'])
-def delete_project01(request, project01_id):
+def delete_project(request, project01_id):
     Project01.objects.filter(id=project01_id).delete()
     return Response({'success': True})
