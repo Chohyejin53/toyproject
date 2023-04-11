@@ -1,7 +1,9 @@
 from rest_framework import serializers
-from .models import Project01
+from project01.models import Worry
 
-class Project01Serializer(serializers.ModelSerializer):
+class WorrySerializer(serializers.ModelSerializer):
+    image = serializers.ImageField(max_length=None, use_url=True)
+
     class Meta:
-        model = Project01
-        fields = ('text', 'user_id', 'created_at')
+        model = Worry
+        fields = ('id', 'text', 'user_id', 'created_at', 'image')
